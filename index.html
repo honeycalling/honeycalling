@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/d0b1d1faec.js" crossorigin="anonymous"></script>
+	<title>Feedback Survey</title>
+	</head>
+
+<body>
+	<h1 id="title" class="title">Send Us Your Feedback!</h1>
+    <p id="title-description" class="title-paragraph">At Daisy's Cafe, we are always looking to improve your experience!<br>
+        Please help us get even better by filling out the form below.</p>
+    </p>
+    <form id="survey-form" class="survey-form"> 
+        <p id="description" class="survey-directions">Help us get to know you!
+        <fieldset>
+            <label for="name" id="name-label">What should we call you? 
+                <br>
+                <input id="name" type="text" placeholder="Daisy" required />
+            </label>
+            <label for="number-label" id="number-label"> How old are you? 
+                <br>
+                <input id="number" type="number" min="13" max="120" placeholder="35" required />
+            </label>
+            <label for="email" id="email-label">What is your email address? 
+                <br>
+                <input id="email" type="email" placeholder="bigdaisy@cat.com" required />
+            </label>
+        </fieldset>
+        <p id="survey-content" class="survey-directions">Now, on to the survey questions!<br>
+            Please tell us about your experiences at Daisy's Cafe!</p>
+        <fieldset>
+            <label for="dropdown" id="dropdown-label" class="directions">Which location did you visit most recently? <br>
+                <select id="dropdown" class="dropdown" name="dropdown">
+                    <option value="1">Purris</option>
+                    <option value="2">Meow York City</option>
+                    <option value="3">Tabby Town</option>
+                    <option value="4">Pawston</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <p id="beginning" class="directions">I usually visit Daisy's. . .</p>
+            <label for="early-morning">
+                <input type="radio" id="early-morning" name="common-time" class="inline" value="1" checked />for breakfast (6am-9am)
+            </label>
+            <label for="mid-morning">
+                <input type="radio" id="mid-morning" name="common-time" class="inline" value="2"/>for brunch (9am-11am)
+            </label>
+            <label for="early-afternoon">
+                <input type="radio" id="early-afternoon" name="common-time" class="inline" value="3" />for lunch (11am-1pm)
+            </label>
+            <label for="mid-afternoon">
+                <input type="radio" id="mid-afternoon" name="common-time" class="inline" value="4" />for a pick-me-up (1pm-4pm)
+            </label>
+        </fieldset>
+        <fieldset>
+            <p id="survey-content" class="directions">Please select any drink that you have enjoyed from Daisy's Cafe.</p>
+            <label for="checkbox">
+                <input class="inline" id="checkbox" type="checkbox" value="1" /> Hot Coffee
+            </label>
+            <label for="checkbox">
+                <input class="inline" id="checkbox" type="checkbox" value="2" /> Iced Coffee
+            </label>
+            <label for="checkbox">
+                <input class="inline" id="checkbox" type="checkbox" value="3" /> Cafe Mocha
+            </label>
+            <label for="checkbox">
+                <input class="inline" id="checkbox" type="checkbox" value="4" /> Cappuccino
+            </label>
+            <label for="checkbox">
+                <input class="inline" id="checkbox" type="checkbox" value="5" /> Macchiato
+            </label>
+            <label for="checkbox">
+                <input class="inline" id="checkbox" type="checkbox" value="6" /> Espresso
+            </label>
+            <label for="checkbox">
+                <input class="inline" id="checkbox" type="checkbox" value="7" /> Americano
+            </label>
+            <label for="checkbox">
+                <input class="inline" id="checkbox" type="checkbox" value="8" /> Cafe au Lait
+            </label>
+            <label for="checkbox">
+                <input class="inline" id="checkbox" type="checkbox" value="9" /> Latte
+            </label>
+            <label for="checkbox">
+                <input class="inline" id="checkbox" type="checkbox" value="10" /> Hot Chocolate
+            </label>
+            <br>
+                <p id="survey-content" class="directions">Please select any food that you have enjoyed from Daisy's Cafe.</p>
+                <label for="checkbox">
+                    <input class="inline" id="checkbox" type="checkbox" value="11" /> Croissant
+                </label>
+                <label for="checkbox">
+                    <input class="inline" id="checkbox" type="checkbox" value="12" /> Pain au Chocolat
+                </label>
+                <label for="checkbox">
+                    <input class="inline" id="checkbox" type="checkbox" value="13" /> Blueberry Scone
+                </label>
+                <label for="checkbox">
+                    <input class="inline" id="checkbox" type="checkbox" value="14" /> Coffee Cake
+                </label>
+                <label for="checkbox">
+                    <input class="inline" id="checkbox" type="checkbox" value="15" /> Cinnamon Roll
+                </label>
+                <label for="checkbox">
+                    <input class="inline" id="checkbox" type="checkbox" value="16" /> Fruit & Granola Parfait
+                </label>
+                <label for="checkbox">
+                    <input class="inline" id="checkbox" type="checkbox" value="17" /> Bagel
+                </label>
+                <label for="checkbox">
+                    <input class="inline" id="checkbox" type="checkbox" value="18" /> Blueberry Muffin
+                </label>
+                <label for="checkbox">
+                    <input class="inline" id="checkbox" type="checkbox" value="19" /> Baguette
+                </label>
+                <label for="checkbox">
+                    <input class="inline" id="checkbox" type="checkbox" value="20" /> Tarte au Citron
+                </label>
+        </fieldset>
+        <fieldset>
+        <p id="response-box" class="directions">Have anything to tell us?
+            Tell us about a favorite order, more details about your last experience with us, or something you'd like to see added to the menu!
+        </p>
+        <label for="text">
+            <textarea id="response" name="response" rows="5" cols="50" placeholder="My favorite order at Daisy's is. . . "></textarea>
+        </label>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit!" />
+        </form>
+        <footer class="footer" id="footer">
+            <p id="thanks" class="thanks">Thank you for choosing Daisy's Cafe!</p>
+            <a href="https://github.com/honeycalling"<i class="fa-brands fa-github"></i></a>
+        </footer>
+	</body>
+	</html>
